@@ -1,3 +1,9 @@
+<?php
+
+require 'db/Database.php';
+
+if(isset($_SESSION['id']) && !empty($_SESSION['id'])): ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -28,11 +34,12 @@
           </ul>
         </li>
       </ul>
-      <form class="d-flex">
-        <button class="btn btn-outline-success" type="submit">Sair</button>
-      </form>
+      <div class="d-flex">
+        <a href="app/logout.php">Sair</a>
+      </div>
     </div>
   </div>
 </nav>
 </body>
 </html>
+<?php else: header("Location: home.php"); endif; ?>
