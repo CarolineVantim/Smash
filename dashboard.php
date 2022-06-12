@@ -29,8 +29,7 @@ if(isset($_SESSION['id']) && !empty($_SESSION['id'])): ?>
             Cadastros
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Funcionários</a></li>
-            <li><a class="dropdown-item" href="#">Produtos</a></li>
+            <li><a class="dropdown-item" href="produtos.php">Produtos</a></li>
           </ul>
         </li>
       </ul>

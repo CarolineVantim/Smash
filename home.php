@@ -8,14 +8,14 @@
    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <link rel="stylesheet" href="app/assets/style.css">
+   <link rel="stylesheet" href="app/assets/css/style.css">
 
 </head>
 <body>
    <div class="wrapper fadeInDown">
       <div id="formContent">
          <div class="fadeIn first">
-            <img src="img/inventory.jpg" id="icon" alt="User Icon">
+            <img src="app/assets/img/inventory.jpg" id="icon" alt="User Icon">
          </div>
          <form action="app/Login.php" method="POST">
             
