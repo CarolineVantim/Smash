@@ -21,19 +21,4 @@
                 return false;            
             }
         }
-
-        public function Consultar(){
-
-            $sql = "SELECT * FROM funcionarios";
-            $sql = $pdo->prepare($sql);
-        }
-
-        public function Alterar(){
-
-        }
-
-        public function Cadastrar(){
-
-        }
-
     }

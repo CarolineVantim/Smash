@@ -18,4 +18,4 @@ session_start();
     }
 
     $sql = $pdo->query("SELECT * FROM funcionarios");
-    $sql->execute();       
+    $sql->execute();  
