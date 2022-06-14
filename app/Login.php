@@ -2,8 +2,8 @@
 
   if (isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) && !empty($_POST['senha'])) {
     
-    require '../db/Database.php';
-    require '../app/Classes/Funcionario.php';
+    require '../db/Conexao.php';
+    require 'Classes/Funcionario.Class.php';
 
     $valida = new Funcionario();
     
@@ -19,9 +19,9 @@
        }
 
      }else{
-       header("Location: ../home.php");
+       header("Location: home.php");
      }
 
   }else{
-    header("Location: ../home.php");
+    header("Location: home.php");
   }

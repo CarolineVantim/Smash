@@ -1,6 +1,6 @@
 <?php
 
-require 'db/Database.php';
+require 'db/Conexao.php';
 
 if(isset($_SESSION['id']) && !empty($_SESSION['id'])):?>
 <?php else: header("Location: home.php"); endif;?>

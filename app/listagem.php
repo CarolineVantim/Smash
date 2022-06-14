@@ -1,6 +1,6 @@
 <?php
 
-include_once('Produtos.Class.php');
+include_once('Classes/Produtos.Class.php');
 
 $produtos = Produto::getProdutos();
 
@@ -45,7 +45,9 @@ $produtos = Produto::getProdutos();
   <?=$mensagem?>
 
   <div class="text-end">
+    <a href="cadastrar.php">
         <button type="button" class="btn btn-dark btn-sm"> + Produto</button>
+    </a>
   </div>
 
   <section>

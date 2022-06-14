@@ -1,9 +1,9 @@
 <?php
 
-require_once('Produtos.Class.php');
+require_once('app/Classes/Produtos.Class.php');
 //VALIDAÇÃO DO ID
 if(!isset($_GET['id_produto']) or !is_numeric($_GET['id_produto'])){
-  header('location: dashboard.php?status=error');
+  header('location: ../dashboard.php?status=error');
   exit;
 }
 

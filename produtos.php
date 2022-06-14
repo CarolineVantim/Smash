@@ -1,8 +1,7 @@
 <?php
 
-require 'db/Database.php';
-
-if(isset($_SESSION['id']) && !empty($_SESSION['id'])): ?>
+require 'db/Conexao.php';
+?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -19,18 +18,18 @@ if(isset($_SESSION['id']) && !empty($_SESSION['id'])): ?>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Controle de Estoque</a>
+      <a class="navbar-brand" href="dashboard">Controle de Estoque</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Cadastros
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="">Produtos</a></li>
+              <li><a class="dropdown-item" href="produtos.php">Produtos</a></li>
             </ul>
           </li>
         </ul>
@@ -45,9 +44,8 @@ if(isset($_SESSION['id']) && !empty($_SESSION['id'])): ?>
       <div class="text-start">
         <h4>Produtos</h4>
       </div>
-      <?php require_once 'listagem.php'; ?>
+      <?php require_once 'app/listagem.php'; ?>
     </div>
   </div>
 </body>
 </html>
-<?php else: header("Location: home.php"); endif; ?>

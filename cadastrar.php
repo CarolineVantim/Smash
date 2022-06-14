@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Produtos.Class.php';
+require_once 'app/Classes/Produtos.Class.php';
 $obProd = new Produto;
 
 
