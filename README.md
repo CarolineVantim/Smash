@@ -1,9 +1,9 @@
-Projeto: Smash
-Cadastro de produtos
+Projeto para cadastro de Produtos.Onde teremos as informações:
 
-Ferramentas utilizadas:
-PHP 8.1.6
-Xampp
-MariaDB
+Nome do produto, Descrição, Marca e Quantidade em estoque
 
-Utilizar os testes da aplicação com o Xampp
+Banco de dados utilizado: MySQL e PDO orientado à objetos para separar o acesso ao banco de dados.
+
+CRUD Create, Read, Update, Delete
+
+Obs.: Dump do banco de dados está no diretório "db/smash.sql".
