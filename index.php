@@ -17,7 +17,7 @@
          <div class="fadeIn first">
             <img src="app/assets/img/inventory.jpg" id="icon" alt="User Icon">
          </div>
-         <form action="app/Login.php" method="POST">
+         <form action="app/login.php" method="POST">
             
             <input type="text" id="email" name="email" placeholder="E-mail">
 

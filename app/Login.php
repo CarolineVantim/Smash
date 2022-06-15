@@ -14,14 +14,14 @@
        if(isset($_SESSION['id'])){
         header("Location: ../dashboard.php");
        }else{
-        header("Location: ../home.php");
+        header("Location: ../index.php");
         echo("Email ou senha inválidos!");
        }
 
      }else{
-       header("Location: home.php");
+       header("Location: index.php");
      }
 
   }else{
-    header("Location: home.php");
+    header("Location: index.php");
   }

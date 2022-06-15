@@ -29,7 +29,7 @@ require 'db/Conexao.php';
               Cadastros
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="produtos.php">Produtos</a></li>
+              <li><a class="dropdown-item" href="product.php">Produtos</a></li>
             </ul>
           </li>
         </ul>

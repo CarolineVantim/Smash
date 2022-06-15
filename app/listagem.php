@@ -23,10 +23,10 @@ $produtos = Produto::getProdutos();
                       <td>'.$produto->marca.'</td>
                       <td>'.$produto->quantidade.'</td>
                       <td>
-                        <a href="editar.php?id_produto='.$produto->id_produto.'">
+                        <a href="edit.php?id_produto='.$produto->id_produto.'">
                           <button type="button" class="btn btn-primary">Editar</button>
                         </a>
-                        <a href="excluir.php?id_produto='.$produto->id_produto.'">
+                        <a href="delete.php?id_produto='.$produto->id_produto.'">
                           <button type="button" class="btn btn-danger">Excluir</button>
                         </a>
                       </td>
@@ -45,7 +45,7 @@ $produtos = Produto::getProdutos();
   <?=$mensagem?>
 
   <div class="text-end">
-    <a href="cadastrar.php">
+    <a href="register.php">
         <button type="button" class="btn btn-dark btn-sm"> + Produto</button>
     </a>
   </div>
